@@ -1,2 +1,1 @@
-# Hall-Booking-System
-..
+# hall-booking-system

@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+node_modules
+# Frontend 1
+/Frontend 1/node_modules
+/Frontend 1/dist
