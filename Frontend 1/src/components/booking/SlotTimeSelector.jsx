@@ -59,7 +59,7 @@ const SlotTimeSelector = ({
     
     if (status === 'Approved') {
       // Grey for approved bookings
-      return 'bg-gray-300 text-gray-700 cursor-not-allowed';
+      return 'bg-gray-300 text-text-charcoal cursor-not-allowed';
     } else if (status === 'Pending') {
       // Yellow for pending bookings - now clickable
       return 'bg-yellow-200 text-yellow-800 hover:bg-yellow-300 cursor-pointer relative';
@@ -138,7 +138,7 @@ const SlotTimeSelector = ({
               disabled={isApproved}
               className={`px-2 py-2 rounded-md text-xs font-medium text-center transition
                 ${getSlotClasses(label, isSelected)}
-                ${isSelected ? '!bg-blue-600 text-white ring-2 ring-blue-500' : ''}
+                ${isSelected ? '!bg-secondary-royal-gold text-white ring-2 ring-blue-500' : ''}
                 ${isPending ? 'group' : ''}
               `}
               title={titleText}
@@ -168,13 +168,13 @@ const SlotTimeSelector = ({
             <div className="flex justify-end space-x-3">
               <button
                 onClick={cancelBooking}
-                className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-md transition"
+                className="px-4 py-2 text-gray-600 hover:bg-background-ivory-white rounded-md transition"
               >
                 Cancel
               </button>
               <button
                 onClick={confirmBooking}
-                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+                className="px-4 py-2 bg-secondary-royal-gold text-white rounded-md hover:bg-accent-champagne transition"
               >
                 Book Anyway
               </button>
@@ -194,7 +194,7 @@ const SlotTimeSelector = ({
           <span className="w-3.5 h-3.5 rounded-full bg-gray-300 border mr-2" /> Approved
         </div>
         <div className="flex items-center">
-          <span className="w-3.5 h-3.5 rounded-full bg-blue-600 border mr-2" /> Selected
+          <span className="w-3.5 h-3.5 rounded-full bg-secondary-royal-gold border mr-2" /> Selected
         </div>
       </div>
     </div>

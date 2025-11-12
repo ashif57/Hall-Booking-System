@@ -52,12 +52,12 @@ const HistoryLogin = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="relative flex items-center justify-center min-h-screen bg-gray-100"
+      className="relative flex items-center justify-center min-h-screen bg-background-ivory-white"
     >
       <button
         type="button"
         onClick={() => navigate('/')}
-        className="absolute flex items-center px-4 py-2 font-medium text-gray-600 transition-colors duration-300 rounded-md top-4 right-4 hover:bg-blue-600 hover:text-white"
+        className="absolute flex items-center px-4 py-2 font-medium text-text-charcoal transition-colors duration-300 rounded-md top-4 right-4 hover:bg-secondary-royal-gold hover:text-white"
       >
         <ArrowLeft size={18} className="mr-2" /> Back to Home
       </button>
@@ -70,12 +70,12 @@ const HistoryLogin = () => {
           // Email form
           <form onSubmit={handleEmailSubmit}>
             <div className="mb-6">
-              <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
+              <label className="block mb-2 text-sm font-bold text-text-charcoal" htmlFor="email">
                 Email Address
               </label>
               <div className="relative">
                 <input
-                  className="w-full px-3 py-2 pl-10 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  className="w-full px-3 py-2 pl-10 leading-tight text-text-charcoal border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                   id="email"
                   type="email"
                   placeholder="Enter your email"
@@ -88,7 +88,7 @@ const HistoryLogin = () => {
             </div>
             
             <button
-              className="flex items-center justify-center w-full px-4 py-2 font-bold text-white transition-colors bg-blue-600 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline disabled:opacity-50"
+              className="flex items-center justify-center w-full px-4 py-2 font-bold text-white transition-colors bg-secondary-royal-gold rounded hover:bg-accent-champagne focus:outline-none focus:shadow-outline disabled:opacity-50"
               type="submit"
               disabled={isLoading}
             >
@@ -104,11 +104,11 @@ const HistoryLogin = () => {
           // OTP form
           <form onSubmit={handleOtpSubmit}>
             <div className="mb-4">
-              <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
+              <label className="block mb-2 text-sm font-bold text-text-charcoal" htmlFor="email">
                 Email Address
               </label>
               <input
-                className="w-full px-3 py-2 text-gray-700 bg-gray-100 border rounded shadow appearance-none focus:outline-none"
+                className="w-full px-3 py-2 text-text-charcoal bg-background-ivory-white border rounded shadow appearance-none focus:outline-none"
                 id="email"
                 type="email"
                 value={email}
@@ -117,12 +117,12 @@ const HistoryLogin = () => {
             </div>
             
             <div className="mb-6">
-              <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="otp">
+              <label className="block mb-2 text-sm font-bold text-text-charcoal" htmlFor="otp">
                 OTP
               </label>
               <div className="relative">
                 <input
-                  className="w-full px-3 py-2 pl-10 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  className="w-full px-3 py-2 pl-10 leading-tight text-text-charcoal border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                   id="otp"
                   type="text"
                   placeholder="Enter OTP"
@@ -136,7 +136,7 @@ const HistoryLogin = () => {
             </div>
             
             <button
-              className="flex items-center justify-center w-full px-4 py-2 font-bold text-white transition-colors bg-blue-600 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline disabled:opacity-50"
+              className="flex items-center justify-center w-full px-4 py-2 font-bold text-white transition-colors bg-secondary-royal-gold rounded hover:bg-accent-champagne focus:outline-none focus:shadow-outline disabled:opacity-50"
               type="submit"
               disabled={isLoading}
             >

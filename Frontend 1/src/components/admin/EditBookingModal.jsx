@@ -66,12 +66,12 @@ const EditBookingModal = ({ booking, onClose, onBookingUpdated }) => {
         <h3 className="mb-4 text-lg font-semibold">Edit Booking #{booking.id}</h3>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">Slot Date</label>
+            <label className="block text-sm font-medium text-text-charcoal">Slot Date</label>
             <p className="mt-1 text-gray-900">{formData.slot_date}</p>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Session</label>
+            <label className="block text-sm font-medium text-text-charcoal">Session</label>
             <p className="mt-1 text-gray-900">
               {
                 sessions.find((session) => session.id === formData.session)?.session_type || "N/A"
@@ -79,7 +79,7 @@ const EditBookingModal = ({ booking, onClose, onBookingUpdated }) => {
             </p>
           </div>
           <div>
-            <label htmlFor="hall" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="hall" className="block text-sm font-medium text-text-charcoal">
               Hall
             </label>
             <select
@@ -99,7 +99,7 @@ const EditBookingModal = ({ booking, onClose, onBookingUpdated }) => {
           </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700">Slot Time</label>
+              <label className="block text-sm font-medium text-text-charcoal">Slot Time</label>
               <p className="mt-1 text-gray-900">{formData.slot_time}</p>
             </div>
 
@@ -107,13 +107,13 @@ const EditBookingModal = ({ booking, onClose, onBookingUpdated }) => {
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 text-gray-600 rounded hover:bg-gray-100"
+              className="px-4 py-2 text-gray-600 rounded hover:bg-background-ivory-white"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700"
+              className="px-4 py-2 text-white bg-secondary-royal-gold rounded hover:bg-accent-champagne"
             >
               Update Booking
             </button>

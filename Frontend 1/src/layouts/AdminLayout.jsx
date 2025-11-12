@@ -27,7 +27,7 @@ const AdminLayout = () => {
   const isRestricted = userRole && restrictedRoles.includes(userRole);
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen bg-background-ivory-white">
       {!isRestricted && <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />}
       <div className={`flex-1 flex flex-col overflow-hidden ${isRestricted ? 'w-full' : ''}`}>
         <header className="flex justify-between items-center p-4  ">
@@ -49,7 +49,7 @@ const AdminLayout = () => {
             </button>
           )}
         </header>
-        <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-4 sm:p-6 lg:p-8">
+        <main className="flex-1 overflow-x-hidden overflow-y-auto bg-background-ivory-white p-4 sm:p-6 lg:p-8">
           <Outlet />
         </main>
       </div>

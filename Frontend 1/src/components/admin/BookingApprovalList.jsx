@@ -112,7 +112,7 @@ const BookingApprovalList = () => {
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
               filter === statusOption
                 ? 'bg-indigo-600 text-white shadow-md'
-                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                : 'bg-gray-200 text-text-charcoal hover:bg-gray-300'
             }`}
           >
             {statusOption}
@@ -126,7 +126,7 @@ const BookingApprovalList = () => {
         <select
           value={selectedOffice}
           onChange={(e) => setSelectedOffice(e.target.value)}
-          className="px-4 py-2 rounded-full text-sm font-medium bg-gray-200 text-gray-700"
+          className="px-4 py-2 rounded-full text-sm font-medium bg-gray-200 text-text-charcoal"
         >
           <option value="">All Offices</option>
           {offices.map((office) => (
@@ -140,7 +140,7 @@ const BookingApprovalList = () => {
         <select
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
-          className="px-4 py-2 rounded-full text-sm font-medium bg-gray-200 text-gray-700"
+          className="px-4 py-2 rounded-full text-sm font-medium bg-gray-200 text-text-charcoal"
         >
           <option value="">All Categories</option>
           {categories.map((category) => (
@@ -154,7 +154,7 @@ const BookingApprovalList = () => {
         <select
           value={selectedSession}
           onChange={(e) => setSelectedSession(e.target.value)}
-          className="px-4 py-2 rounded-full text-sm font-medium bg-gray-200 text-gray-700"
+          className="px-4 py-2 rounded-full text-sm font-medium bg-gray-200 text-text-charcoal"
         >
           <option value="">All Sessions</option>
           {sessions.map((session) => (
@@ -167,14 +167,14 @@ const BookingApprovalList = () => {
 
       <div className="overflow-x-auto">
         <table className="min-w-full text-left bg-white border-collapse">
-          <thead className="bg-gray-100">
+          <thead className="bg-background-ivory-white">
             <tr>
-              <th className="p-4 font-semibold text-gray-700">ID</th>
-              <th className="p-4 font-semibold text-gray-700">User</th>
-              <th className="p-4 font-semibold text-gray-700">Hall</th>
-              <th className="p-4 font-semibold text-gray-700">Date & Time</th>
-              <th className="p-4 font-semibold text-gray-700">Status</th>
-              <th className="p-4 font-semibold text-gray-700 text-center">Actions</th>
+              <th className="p-4 font-semibold text-text-charcoal">ID</th>
+              <th className="p-4 font-semibold text-text-charcoal">User</th>
+              <th className="p-4 font-semibold text-text-charcoal">Hall</th>
+              <th className="p-4 font-semibold text-text-charcoal">Date & Time</th>
+              <th className="p-4 font-semibold text-text-charcoal">Status</th>
+              <th className="p-4 font-semibold text-text-charcoal text-center">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -189,7 +189,7 @@ const BookingApprovalList = () => {
                     booking.status === 'Approved' ? 'bg-green-100 text-green-700' :
                     booking.status === 'Pending' ? 'bg-yellow-100 text-yellow-700' :
                     booking.status === 'Rejected' ? 'bg-red-100 text-red-700' :
-                    'bg-gray-100 text-gray-700' // For 'Cancelled' and any other status
+                    'bg-background-ivory-white text-text-charcoal' // For 'Cancelled' and any other status
                   }`}>
                     {booking.status}
                   </span>
@@ -251,7 +251,7 @@ const BookingApprovalList = () => {
             <div className="flex justify-end space-x-2">
               <button
                 onClick={() => setShowRejectModal(false)}
-                className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded"
+                className="px-4 py-2 text-gray-600 hover:bg-background-ivory-white rounded"
               >
                 Cancel
               </button>

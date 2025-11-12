@@ -78,7 +78,7 @@ const SimilarSpaces = () => {
               <p className="mb-2 text-gray-500">Capacity: {hall.capacity} people</p>
               <p className="text-gray-600 line-clamp-2">{hall.about}</p>
               <button
-                className="w-full py-2 mt-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700"
+                className="w-full py-2 mt-3 text-white bg-secondary-royal-gold rounded-lg hover:bg-accent-champagne"
                 onClick={() => navigate(`/halls/${hall.id}`)}
               >
                 Book Now

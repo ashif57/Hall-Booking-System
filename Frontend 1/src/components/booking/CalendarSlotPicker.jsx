@@ -56,7 +56,7 @@ const CalendarSlotPicker = ({ selectedDate, setSelectedDate }) => {
                 new Date(monthCursor.getFullYear(), monthCursor.getMonth() - 1, 1)
               )
             }
-            className="p-1 rounded hover:bg-gray-100"
+            className="p-1 rounded hover:bg-background-ivory-white"
             aria-label="Previous Month"
           >
             <ChevronLeft size={18} />
@@ -68,7 +68,7 @@ const CalendarSlotPicker = ({ selectedDate, setSelectedDate }) => {
                 new Date(monthCursor.getFullYear(), monthCursor.getMonth() + 1, 1)
               )
             }
-            className="p-1 rounded hover:bg-gray-100"
+            className="p-1 rounded hover:bg-background-ivory-white"
             aria-label="Next Month"
           >
             <ChevronRight size={18} />
@@ -98,8 +98,8 @@ const CalendarSlotPicker = ({ selectedDate, setSelectedDate }) => {
               type="button"
               onClick={() => setSelectedDate(new Date(d))}
               className={`h-9 rounded-md text-sm
-                ${inMonth ? 'hover:bg-gray-100' : 'text-gray-300'}
-                ${isSelected ? 'bg-blue-600 text-white hover:bg-blue-600' : ''}
+                ${inMonth ? 'hover:bg-background-ivory-white' : 'text-gray-300'}
+                ${isSelected ? 'bg-secondary-royal-gold text-white hover:bg-secondary-royal-gold' : ''}
               `}
             >
               {d.getDate()}

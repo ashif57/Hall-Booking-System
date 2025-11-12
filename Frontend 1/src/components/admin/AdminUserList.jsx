@@ -9,7 +9,7 @@ const AdminUserList = ({ users, onSelectUser }) => {
           <li
             key={user.admin_code}
             onClick={() => onSelectUser(user)}
-            className="cursor-pointer p-4 border rounded-lg hover:bg-gray-100 flex justify-between items-center"
+            className="cursor-pointer p-4 border rounded-lg hover:bg-background-ivory-white flex justify-between items-center"
           >
             <div>
               <p className="font-semibold">{user.username}</p>
