@@ -43,12 +43,12 @@ const AdminLogin = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="relative flex items-center justify-center min-h-screen bg-gray-100"
+      className="relative flex items-center justify-center min-h-screen bg-background-ivory-white"
     >
       <button
         type="button"
         onClick={() => navigate('/')}
-        className="absolute flex items-center px-4 py-2 font-medium text-gray-600 transition-colors duration-300 rounded-md top-4 right-4 hover:bg-blue-600 hover:text-white"
+        className="absolute flex items-center px-4 py-2 font-medium text-text-charcoal transition-colors duration-300 rounded-md top-4 right-4 hover:bg-secondary-royal-gold hover:text-white"
       >
         <ArrowLeft size={18} className="mr-2" /> Back to Home
       </button>
@@ -57,11 +57,11 @@ const AdminLogin = () => {
         <p className="mb-8 text-center text-gray-500">Access the hall management dashboard.</p>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="username">
+            <label className="block mb-2 text-sm font-bold text-text-charcoal" htmlFor="username">
               Username
             </label>
             <input
-              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+              className="w-full px-3 py-2 leading-tight text-text-charcoal border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               id="username"
               type="text"
               name="username"
@@ -72,12 +72,12 @@ const AdminLogin = () => {
             />
           </div>
           <div className="mb-6">
-            <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="password">
+            <label className="block mb-2 text-sm font-bold text-text-charcoal" htmlFor="password">
               Password
             </label>
             <div className="relative">
               <input
-                className="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                className="w-full px-3 py-2 mb-3 leading-tight text-text-charcoal border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                 id="password"
                 type={showPassword ? "text" : "password"}
                 name="password"
@@ -98,7 +98,7 @@ const AdminLogin = () => {
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="flex items-center justify-center w-full px-4 py-2 font-bold text-white transition-colors bg-blue-600 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              className="flex items-center justify-center w-full px-4 py-2 font-bold text-white transition-colors bg-secondary-royal-gold rounded hover:bg-accent-champagne focus:outline-none focus:shadow-outline"
               type="submit"
             >
               <LogIn size={18} className="mr-2"/>

@@ -72,7 +72,7 @@ const BookingConfirmation = () => {
         {bookingDetails && (
           <div className="text-left bg-gray-50 rounded-lg p-4 my-6 border border-gray-200">
               <h2 className="font-semibold text-lg mb-3">Booking Summary</h2>
-              <div className="space-y-2 text-sm text-gray-700">
+              <div className="space-y-2 text-sm text-text-charcoal">
                   <p><strong>Booking ID:</strong> {bookingDetails.id}</p>
                   <p><strong>Hall:</strong> {bookingDetails.hall_name}</p>
                   <p><strong>Date:</strong> {bookingDetails.slot_date}</p>

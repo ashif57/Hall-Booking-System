@@ -659,12 +659,12 @@ const BookingForm = () => {
                 />
               )}
 
-              <h2 className="mb-2 text-xl font-bold text-gray-700" style={{fontSize: '14px'}}>{hall?.hall_name || "Hall Details"}</h2>
+              <h2 className="mb-2 text-xl font-bold text-text-charcoal" style={{fontSize: '14px'}}>{hall?.hall_name || "Hall Details"}</h2>
               <p className="mb-4 text-gray-600" style={{fontSize: '12px'}}>
                 {hall?.about || "This hall is ideal for conferences, workshops, and events. Fully equipped with modern amenities to make your sessions productive"}
               </p>
 
-              <h2 className="mb-2 text-xl font-bold text-gray-700" style={{fontSize: '14px'}}>Hall Amenities</h2>
+              <h2 className="mb-2 text-xl font-bold text-text-charcoal" style={{fontSize: '14px'}}>Hall Amenities</h2>
               <div className="p-4">
              <Amenities availableAmenities={{
               wifi: hall?.wifi,
@@ -759,7 +759,7 @@ const BookingForm = () => {
                                           <button 
                                             type="button" 
                                             onClick={sendOtp} 
-                                            className="px-2 py-1 text-xs text-white transition-colors bg-blue-600 rounded-lg text-size-sm hover:bg-blue-700 whitespace-nowrap"
+                                            className="px-2 py-1 text-xs text-white transition-colors bg-secondary-royal-gold rounded-lg text-size-sm hover:bg-accent-champagne whitespace-nowrap"
                                           >
                                             Send OTP
                                           </button>
@@ -795,7 +795,7 @@ const BookingForm = () => {
                                         <button
                                           type="button"
                                           onClick={sendOtp}
-                                          className="px-4 py-2 mt-2 text-sm text-white transition-colors bg-blue-600 rounded-lg hover:bg-blue-700"
+                                          className="px-4 py-2 mt-2 text-sm text-white transition-colors bg-secondary-royal-gold rounded-lg hover:bg-accent-champagne"
                                         >
                                           Resend OTP``
                                         </button>
@@ -809,7 +809,7 @@ const BookingForm = () => {
                             
                             {/* Team Dropdown */}
                             <div>
-                                  <label className="block mb-1 text-sm font-medium text-gray-700">Team</label>
+                                  <label className="block mb-1 text-sm font-medium text-text-charcoal">Team</label>
                                   <Select
                                     options={teamOptions}
                                     value={teamOptions.find((option) => option.value === bookingDetails.team_name)}
@@ -857,7 +857,7 @@ const BookingForm = () => {
                             {/* Select session */}
                             <div>
                                   <label
-                                    className="block mb-1 font-medium text-gray-700"
+                                    className="block mb-1 font-medium text-text-charcoal"
                                     style={{ fontSize: '14px' }}
                                   >
                                     Select session
@@ -913,7 +913,7 @@ const BookingForm = () => {
                             {/* Shift Dropdown */}
                             <div>
                                   <label
-                                    className="block mb-1 font-medium text-gray-700"
+                                    className="block mb-1 font-medium text-text-charcoal"
                                     style={{ fontSize: '14px' }}
                                   >
                                     Select Shift
@@ -967,7 +967,7 @@ const BookingForm = () => {
                             {/* Four toggles */}
                             <div className="grid grid-cols-1 row-span-2 gap-4 p-4 mt-6 md:grid-cols-2">
                                 <div className="flex items-center justify-between"> 
-                                  <label htmlFor="it_support" className="font-medium text-gray-700" style={{fontSize: '14px'}}>IT Support Needed</label>
+                                  <label htmlFor="it_support" className="font-medium text-text-charcoal" style={{fontSize: '14px'}}>IT Support Needed</label>
                                   <input
                                     type="checkbox"
                                     name="it_support"
@@ -978,7 +978,7 @@ const BookingForm = () => {
                                   />
                                 </div>
                                 <div className="flex items-center justify-between">
-                                  <label htmlFor="hr_support" className="font-medium text-gray-700" style={{fontSize: '14px'}}>HR Team</label>
+                                  <label htmlFor="hr_support" className="font-medium text-text-charcoal" style={{fontSize: '14px'}}>HR Team</label>
                                   <input
                                     type="checkbox"
                                     name="hr_support"
@@ -989,7 +989,7 @@ const BookingForm = () => {
                                   />
                                 </div>
                                 <div className="flex items-center justify-between">
-                                  <label htmlFor="fin_support" className="font-medium text-gray-700" style={{fontSize: '14px'}}>Finance Team</label>
+                                  <label htmlFor="fin_support" className="font-medium text-text-charcoal" style={{fontSize: '14px'}}>Finance Team</label>
                                   <input
                                     type="checkbox"
                                     name="fin_support"
@@ -1000,7 +1000,7 @@ const BookingForm = () => {
                                   />
                                 </div>
                                 <div className="flex items-center justify-between">
-                                  <label htmlFor="cafeteria" className="font-medium text-gray-700" style={{fontSize: '14px'}}>Cafeteria</label>
+                                  <label htmlFor="cafeteria" className="font-medium text-text-charcoal" style={{fontSize: '14px'}}>Cafeteria</label>
                                   <input
                                     type="checkbox"
                                     name="cafeteria"
@@ -1014,7 +1014,7 @@ const BookingForm = () => {
 
                             {/* Description */}
                             <div className="mt-6">
-                                <label className="block mb-2 font-medium text-gray-700" style={{fontSize: '14px'}}>Description</label>
+                                <label className="block mb-2 font-medium text-text-charcoal" style={{fontSize: '14px'}}>Description</label>
                                 <textarea
                                   name="description"
                                   value={bookingDetails.description}
@@ -1037,7 +1037,7 @@ const BookingForm = () => {
 
           {/* Date and Time Selection */}
               <div className="mt-8">
-                <h2 className="mb-4 text-xl font-bold text-gray-700" style={{fontSize: '14px'}}>Select Date & T ime</h2>
+                <h2 className="mb-4 text-xl font-bold text-text-charcoal" style={{fontSize: '14px'}}>Select Date & T ime</h2>
                 
                 <style>{`
                   .blocked-date {
@@ -1082,7 +1082,7 @@ const BookingForm = () => {
 
                   {/* Time slots with scrollable container */}
                   <div className="flex-1 p-4 border rounded-lg" style={{ maxHeight: '400px', overflowY: 'auto' }}>
-                    <h3 className="mb-3 font-medium text-gray-700" style={{fontSize: '14px'}}>Available Time Slots</h3>
+                    <h3 className="mb-3 font-medium text-text-charcoal" style={{fontSize: '14px'}}>Available Time Slots</h3>
                     <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6">
                       {allSlots.map((slot) => {
                         const booking = bookedSlots.find(b => b.slot_time === slot);
@@ -1091,13 +1091,13 @@ const BookingForm = () => {
 
                         let bgColor = 'bg-green-100 text-green-800';
                         if (disabled) {
-                          bgColor = 'bg-gray-300 text-gray-700';
+                          bgColor = 'bg-gray-300 text-text-charcoal';
                         } else if (status === 'Pending') {
                           bgColor = 'bg-yellow-200 text-yellow-800';
                         }
                         
                         const isSelected = selectedSlots.includes(slot);
-                        let buttonBg = isSelected && !disabled ? 'bg-blue-600 text-white' : bgColor;
+                        let buttonBg = isSelected && !disabled ? 'bg-secondary-royal-gold text-white' : bgColor;
                         if (disabled) buttonBg = 'bg-gray-400';
                         
                         return (
@@ -1131,7 +1131,7 @@ const BookingForm = () => {
                 <div className="mt-6">
                   <button
                     type="submit" 
-                    className="w-full py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:bg-gray-400"
+                    className="w-full py-3 text-white bg-secondary-royal-gold rounded-lg hover:bg-accent-champagne disabled:bg-gray-400"
                     disabled={loading || !hall}
                     onClick={handleSubmit}
                   >

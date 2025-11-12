@@ -62,13 +62,13 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
               <button onClick={handleUpdateHall} disabled={loading} className="flex items-center px-3 py-1 text-sm text-white bg-green-600 rounded hover:bg-green-700 disabled:opacity-50">
                 <Save size={16} className="mr-1" /> Save
               </button>
-              <button onClick={cancelEdit} className="flex items-center px-3 py-1 text-sm text-gray-700 bg-gray-200 rounded hover:bg-gray-300">
+              <button onClick={cancelEdit} className="flex items-center px-3 py-1 text-sm text-text-charcoal bg-gray-200 rounded hover:bg-gray-300">
                 <X size={16} className="mr-1" /> Cancel
               </button>
             </>
           ) : (
             <>
-              <button onClick={() => setEditingHall(hall)} disabled={!!editingHall} className="flex items-center px-3 py-1 text-sm text-white bg-blue-600 rounded hover:bg-blue-700 disabled:opacity-50">
+              <button onClick={() => setEditingHall(hall)} disabled={!!editingHall} className="flex items-center px-3 py-1 text-sm text-white bg-secondary-royal-gold rounded hover:bg-accent-champagne disabled:opacity-50">
                 <Edit size={16} className="mr-1" /> Edit
               </button>
               <button onClick={() => handleDeleteHall(hall.id)} disabled={loading} className="flex items-center px-3 py-1 text-sm text-white bg-red-600 rounded hover:bg-red-700 disabled:opacity-50">
@@ -82,10 +82,10 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
     
     {editingHall && editingHall.id === hall.id && (
       <div className="pt-4 mt-4 border-t">
-        <h4 className="mb-3 font-medium text-gray-700">Edit Hall Details</h4>
+        <h4 className="mb-3 font-medium text-text-charcoal">Edit Hall Details</h4>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-medium text-gray-700">Hall Name *</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">Hall Name *</label>
             <input 
               type="text" 
               name="hall_name" 
@@ -97,7 +97,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
           </div>
           
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-medium text-gray-700">Capacity *</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">Capacity *</label>
             <input 
               type="number" 
               name="capacity" 
@@ -109,7 +109,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
           </div>
           
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-medium text-gray-700">Hall Code *</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">Hall Code *</label>
             <input 
               type="text" 
               name="hall_code" 
@@ -121,7 +121,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
           </div>
           
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-medium text-gray-700">Office *</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">Office *</label>
             <select 
               name="office" 
               value={editingHall.office} 
@@ -135,7 +135,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
           </div>
           
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-medium text-gray-700">Category *</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">Category *</label>
             <select
               name="category"
               value={editingHall.category}
@@ -149,7 +149,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
           </div>
           
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-medium text-gray-700">Day SPOC</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">Day SPOC</label>
             <select
               name="day_spoc"
               value={editingHall.day_spoc || ''}
@@ -162,7 +162,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
           </div>
           
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-medium text-gray-700">Mid SPOC</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">Mid SPOC</label>
             <select 
               name="mid_spoc" 
               value={editingHall.mid_spoc || ''}
@@ -175,7 +175,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
           </div>
           
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-medium text-gray-700">Night SPOC</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">Night SPOC</label>
             <select 
               name="night_spoc" 
               value={editingHall.night_spoc || ''}
@@ -196,7 +196,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
             onChange={handleInputChange}
             className="mr-2"
             />
-            <label className="text-sm font-medium text-gray-700">Wifi</label></div>
+            <label className="text-sm font-medium text-text-charcoal">Wifi</label></div>
             <div className='p-2'>
             <input 
             type="checkbox"
@@ -205,7 +205,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
             onChange={handleInputChange}
             className="mr-2"
             />
-            <label className="text-sm font-medium text-gray-700">Tv/Monitor</label></div>
+            <label className="text-sm font-medium text-text-charcoal">Tv/Monitor</label></div>
             <div className='p-2'>
             <input 
             type="checkbox"
@@ -214,7 +214,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
             onChange={handleInputChange}
             className="mr-2"
             />
-            <label className="text-sm font-medium text-gray-700">White Board</label></div>
+            <label className="text-sm font-medium text-text-charcoal">White Board</label></div>
             <div className='p-2'>
             <input 
             type="checkbox"
@@ -223,7 +223,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
             onChange={handleInputChange}
             className="mr-2"
             />
-            <label className="text-sm font-medium text-gray-700">Speaker</label></div>
+            <label className="text-sm font-medium text-text-charcoal">Speaker</label></div>
             <div className='p-2'>
             <input 
             type="checkbox"
@@ -232,7 +232,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
             onChange={handleInputChange}
             className="mr-2"
             />
-            <label className="text-sm font-medium text-gray-700">Mic</label></div>
+            <label className="text-sm font-medium text-text-charcoal">Mic</label></div>
             <div className='p-2'>
             <input 
             type="checkbox"
@@ -241,7 +241,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
             onChange={handleInputChange}
             className="mr-2"
             />
-            <label className="text-sm font-medium text-gray-700">Power Extention Box</label></div>
+            <label className="text-sm font-medium text-text-charcoal">Power Extention Box</label></div>
             <div className='p-2'>
             <input 
             type="checkbox"
@@ -250,7 +250,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
             onChange={handleInputChange}
             className="mr-2"
             />
-            <label className="text-sm font-medium text-gray-700">Stationaries</label></div>
+            <label className="text-sm font-medium text-text-charcoal">Stationaries</label></div>
             <div className='p-2'>
             <input 
             type="checkbox"
@@ -259,12 +259,12 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
             onChange={handleInputChange}
             className="mr-2"
             />
-            <label className="text-sm font-medium text-gray-700">Chairs & Tables</label></div>
+            <label className="text-sm font-medium text-text-charcoal">Chairs & Tables</label></div>
           </div>
 
 
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-medium text-gray-700">Image</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">Image</label>
             <input 
               type="file" 
               name="image" 
@@ -274,7 +274,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
           </div>
           
           <div className="flex flex-col md:col-span-2">
-            <label className="mb-1 text-sm font-medium text-gray-700">About the Hall</label>
+            <label className="mb-1 text-sm font-medium text-text-charcoal">About the Hall</label>
             <textarea 
               name="about" 
               value={editingHall.about} 
@@ -292,7 +292,7 @@ const HallCard = ({ hall, editingHall, formErrors, offices, adminUsers, categori
               onChange={handleInputChange}
               className="mr-2"
             />
-            <label className="text-sm font-medium text-gray-700">Freeze this hall</label>
+            <label className="text-sm font-medium text-text-charcoal">Freeze this hall</label>
           </div>
         </div>
       </div>
@@ -609,7 +609,7 @@ const HallManagementPage = () => {
           <button
             onClick={() => setShowAddForm(true)}
             disabled={editingHall}
-            className="flex items-center justify-center w-full px-4 py-2 font-semibold text-white bg-blue-600 rounded-lg md:w-auto hover:bg-blue-700 disabled:opacity-50"
+            className="flex items-center justify-center w-full px-4 py-2 font-semibold text-white bg-secondary-royal-gold rounded-lg md:w-auto hover:bg-accent-champagne disabled:opacity-50"
           >
             <PlusCircle size={18} className="mr-2" /> Add Hall
           </button>
@@ -622,7 +622,7 @@ const HallManagementPage = () => {
           
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="flex flex-col">
-              <label className="mb-1 text-sm font-medium text-gray-700">Hall Name *</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">Hall Name *</label>
               <input 
                 type="text" 
                 name="hall_name" 
@@ -635,7 +635,7 @@ const HallManagementPage = () => {
             </div>
             
             <div className="flex flex-col">
-              <label className="mb-1 text-sm font-medium text-gray-700">Capacity *</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">Capacity *</label>
               <input 
                 type="number" 
                 name="capacity" 
@@ -648,7 +648,7 @@ const HallManagementPage = () => {
             </div>
             
             <div className="flex flex-col">
-              <label className="mb-1 text-sm font-medium text-gray-700">Hall Code *</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">Hall Code *</label>
               <input 
                 type="text" 
                 name="hall_code" 
@@ -661,7 +661,7 @@ const HallManagementPage = () => {
             </div>
             
             <div className="flex flex-col">
-              <label className="mb-1 text-sm font-medium text-gray-700">Office *</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">Office *</label>
               <select 
                 name="office" 
                 value={newHall.office} 
@@ -674,7 +674,7 @@ const HallManagementPage = () => {
               {formErrors.office && <p className="mt-1 text-xs text-red-500">{formErrors.office}</p>}
             </div>
             <div className="flex flex-col">
-              <label className="mb-1 text-sm font-medium text-gray-700">Category *</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">Category *</label>
               <select
                 name="category"
                 value={newHall.category}
@@ -688,7 +688,7 @@ const HallManagementPage = () => {
             </div>
             
             <div className="flex flex-col">
-              <label className="mb-1 text-sm font-medium text-gray-700">Day SPOC</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">Day SPOC</label>
               <select 
                 name="day_spoc" 
                 value={newHall.day_spoc} 
@@ -701,7 +701,7 @@ const HallManagementPage = () => {
             </div>
             
             <div className="flex flex-col">
-              <label className="mb-1 text-sm font-medium text-gray-700">Mid SPOC</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">Mid SPOC</label>
               <select 
                 name="mid_spoc" 
                 value={newHall.mid_spoc} 
@@ -714,7 +714,7 @@ const HallManagementPage = () => {
             </div>
             
             <div className="flex flex-col">
-              <label className="mb-1 text-sm font-medium text-gray-700">Night SPOC</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">Night SPOC</label>
               <select 
                 name="night_spoc" 
                 value={newHall.night_spoc} 
@@ -735,7 +735,7 @@ const HallManagementPage = () => {
               onChange={handleInputChange}
               className="mr-2"
               />
-              <label className="text-sm font-medium text-gray-700">Wifi</label></div>
+              <label className="text-sm font-medium text-text-charcoal">Wifi</label></div>
               <div className='p-2'>
               <input 
               type="checkbox"
@@ -744,7 +744,7 @@ const HallManagementPage = () => {
               onChange={handleInputChange}
               className="mr-2"
               />
-              <label className="text-sm font-medium text-gray-700">Tv/Monitor</label></div>
+              <label className="text-sm font-medium text-text-charcoal">Tv/Monitor</label></div>
               <div className='p-2'>
               <input 
               type="checkbox"
@@ -753,7 +753,7 @@ const HallManagementPage = () => {
               onChange={handleInputChange}
               className="mr-2"
               />
-              <label className="text-sm font-medium text-gray-700">White Board</label></div>
+              <label className="text-sm font-medium text-text-charcoal">White Board</label></div>
               <div className='p-2'>
               <input 
               type="checkbox"
@@ -762,7 +762,7 @@ const HallManagementPage = () => {
               onChange={handleInputChange}
               className="mr-2"
               />
-              <label className="text-sm font-medium text-gray-700">Speaker</label></div>
+              <label className="text-sm font-medium text-text-charcoal">Speaker</label></div>
               <div className='p-2'>
               <input 
               type="checkbox"
@@ -771,7 +771,7 @@ const HallManagementPage = () => {
               onChange={handleInputChange}
               className="mr-2"
               />
-              <label className="text-sm font-medium text-gray-700">Mic</label></div>
+              <label className="text-sm font-medium text-text-charcoal">Mic</label></div>
               <div className='p-2'>
               <input 
               type="checkbox"
@@ -780,7 +780,7 @@ const HallManagementPage = () => {
               onChange={handleInputChange}
               className="mr-2"
               />
-              <label className="text-sm font-medium text-gray-700">Power Extention Box</label></div>
+              <label className="text-sm font-medium text-text-charcoal">Power Extention Box</label></div>
               <div className='p-2'>
               <input 
               type="checkbox"
@@ -789,7 +789,7 @@ const HallManagementPage = () => {
               onChange={handleInputChange}
               className="mr-2"
               />
-              <label className="text-sm font-medium text-gray-700">Stationaries</label></div>
+              <label className="text-sm font-medium text-text-charcoal">Stationaries</label></div>
               <div className='p-2'>
               <input 
               type="checkbox"
@@ -798,11 +798,11 @@ const HallManagementPage = () => {
               onChange={handleInputChange}
               className="mr-2"
               />
-              <label className="text-sm font-medium text-gray-700">Chairs & Tables</label></div>
+              <label className="text-sm font-medium text-text-charcoal">Chairs & Tables</label></div>
             </div>
             
             <div className="flex flex-col">
-              <label className="mb-1 text-sm font-medium text-gray-700">Image *</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">Image *</label>
               <input 
                 type="file" 
                 name="image" 
@@ -819,7 +819,7 @@ const HallManagementPage = () => {
             </div>
             
             <div className="flex flex-col md:col-span-2">
-              <label className="mb-1 text-sm font-medium text-gray-700">About the Hall</label>
+              <label className="mb-1 text-sm font-medium text-text-charcoal">About the Hall</label>
               <textarea 
                 name="about" 
                 placeholder="About the hall" 
@@ -838,7 +838,7 @@ const HallManagementPage = () => {
                 onChange={handleInputChange}
                 className="mr-2"
               />
-              <label className="text-sm font-medium text-gray-700">Freeze this hall</label>
+              <label className="text-sm font-medium text-text-charcoal">Freeze this hall</label>
             </div>
           </div>
           
@@ -846,7 +846,7 @@ const HallManagementPage = () => {
             <button type="submit" disabled={loading} className="px-4 py-2 font-semibold text-white bg-green-600 rounded hover:bg-green-700 disabled:opacity-50">
               {loading ? 'Saving...' : 'Save Hall'}
             </button>
-            <button type="button" onClick={cancelAdd} className="px-4 py-2 font-semibold text-gray-700 bg-gray-200 rounded hover:bg-gray-300">
+            <button type="button" onClick={cancelAdd} className="px-4 py-2 font-semibold text-text-charcoal bg-gray-200 rounded hover:bg-gray-300">
               Cancel
             </button>
           </div>

@@ -107,7 +107,7 @@ const LandingPage = () => {
           <p className="mt-2 text-gray-600">{error}</p>
           <button 
             onClick={() => window.location.reload()} 
-            className="px-4 py-2 mt-4 text-white transition-colors bg-blue-500 rounded hover:bg-blue-600"
+            className="px-4 py-2 mt-4 text-white transition-colors bg-secondary-royal-gold rounded hover:bg-accent-champagne"
           >
             Retry
           </button>
@@ -163,7 +163,7 @@ const LandingPage = () => {
               <select
                 value={selectedOffice}
                 onChange={handleOfficeChange}
-                className="w-full appearance-none px-5 py-3 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full appearance-none px-5 py-3 text-text-charcoal border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Select an office...</option>
                 {offices.map((office) => (
@@ -200,7 +200,7 @@ const LandingPage = () => {
                   <select
                     value={selectedCategory}
                     onChange={handleCategoryChange}
-                    className="appearance-none px-5 py-3 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="appearance-none px-5 py-3 text-text-charcoal border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     <option value="">All Categories</option>
                     {[...new Set(halls.map(hall => hall.category))].map(category => (

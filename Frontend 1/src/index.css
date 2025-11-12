@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-gray-900 bg-gray-50;
+  @apply text-text-charcoal bg-background-ivory-white font-sans;
 }
 
 ::selection {
