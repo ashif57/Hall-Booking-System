@@ -9,12 +9,13 @@ const Footer = () => {
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
            <span>
             <img
-              src="/whitelogo.svg"
+              src="/orig.png"
+              className="h-14 w-auto"
             />
           </span>
           </div>
           <div className="text-center md:text-right">
-            <p className="text-gray-400">&copy; {new Date().getFullYear()} VDart Inc. All rights reserved.</p>
+            <p className="text-gray-400">&copy; {new Date().getFullYear()} Hallify. All rights reserved.</p>
             <p className="text-sm text-gray-500">Simplifying reservations for everyone.</p>
           </div>
         </div>

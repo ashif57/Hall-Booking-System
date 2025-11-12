@@ -5,7 +5,7 @@ from django.conf import settings
 from .models import SlotMaster
 
 # List of allowed domains - can be extended as needed
-ALLOWED_DOMAINS = ['vdartinc.com','vdartacademy.com','vdartdigital.com','siddahamed.com']
+ALLOWED_DOMAINS = ['gmail.com', 'yahoo.com', 'outlook.com']
 
 def is_allowed_domain(email):
     """

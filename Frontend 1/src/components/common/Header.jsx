@@ -9,8 +9,9 @@ const Header = () => {
         <Link to="/" className="flex items-center space-x-2">
           <span>
             <img
-              src="/logo.svg"
-              alt="VDart Logo"
+              src="/orig.png"
+              alt="Logo"
+              className="h-14 w-auto"
             />
           </span>
          
