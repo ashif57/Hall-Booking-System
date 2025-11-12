@@ -128,7 +128,7 @@ const LandingPage = () => {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="py-20 bg-[#0048BB] md:py-24">
+        <section className="py-20 bg-[#032d6b] md:py-24">
           <div className="container px-6 mx-auto text-center">
             <motion.h1 
               className="mb-4 text-4xl font-bold text-white md:text-800 md:text-6xl"

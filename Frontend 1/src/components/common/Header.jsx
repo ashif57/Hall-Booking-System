@@ -4,14 +4,14 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-background-ivory-white shadow-md">
-      <div className="container flex items-center justify-between px-6 py-4 mx-auto">
+    <header className="sticky top-0 z-50 bg-[#f7fbbf] shadow-md">
+      <div className="container flex items-center justify-between px-6 py-2 mx-auto">
         <Link to="/" className="flex items-center space-x-2">
           <span>
             <img
               src="/orig.png"
               alt="Logo"
-              className="h-14 w-auto"
+              className="h-12 w-auto"
             />
           </span>
          

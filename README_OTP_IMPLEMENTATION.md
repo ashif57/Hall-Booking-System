@@ -7,7 +7,7 @@ This document describes the implementation of Email OTP verification for the Dja
 1. **Django Backend**:
    - EmailOTP model with email, otp, and created_at fields
    - OTP expiration in 5 minutes
-   - Domain restriction for specific domains (e.g., @vdartinc.com)
+   - Domain restriction for specific domains (e.g., @corptinc.com)
    - 6-digit OTP generation
    - Email sending via Gmail SMTP
    - API endpoints for sending and verifying OTP
@@ -115,7 +115,7 @@ DEFAULT_FROM_EMAIL = 'your-email@gmail.com'
 ## Usage
 
 1. Navigate to `/otp-test` in the React app
-2. Enter an email with an allowed domain (e.g., @vdartinc.com)
+2. Enter an email with an allowed domain (e.g., @corpinc.com)
 3. Receive OTP via email
 4. Enter OTP to verify
 5. Proceed with the booking process after successful verification

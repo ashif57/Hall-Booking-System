@@ -1,6 +1,7 @@
 
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import InstallPWAButton from './components/common/InstallPWAButton';
 
 // Layouts
 import AdminLayout from './layouts/AdminLayout';
@@ -37,9 +38,11 @@ function App() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        {/* Public Routes */}
+    <>
+      <InstallPWAButton />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          {/* Public Routes */}
         <Route path="/" element={<LandingPage />} />
         <Route path="/halls/:id" element={<BookingForm />} />
         <Route path="/confirmation/:bookingId" element={<BookingConfirmation />} />
@@ -72,8 +75,9 @@ function App() {
 
         {/* Super Admin Routes would go here */}
 
-      </Routes>
-    </AnimatePresence>
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 }
 

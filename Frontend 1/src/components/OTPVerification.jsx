@@ -104,7 +104,7 @@ const OTPVerification = () => {
               required
             />
             <p className="mt-2 text-sm text-gray-500">
-              Only emails with domain @vdartinc.com are allowed
+              Only emails with domain @gmail.com are allowed
             </p>
           </div>
           
