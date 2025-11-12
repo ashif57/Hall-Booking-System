@@ -2,6 +2,6 @@ Django
 djangorestframework
 django-cors-headers
 django-filter
-rest_framework_simplejwt
+djangorestframework-simplejwt
 pytz
 gunicorn
