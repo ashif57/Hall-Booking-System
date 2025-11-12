@@ -172,7 +172,7 @@ const AdminCreationForm = ({ initialData, onFormSubmit }) => {
         className="w-full p-2 border rounded"
       />
       <div className="flex space-x-4">
-        <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
+        <button type="submit" className="w-full bg-secondary-royal-gold text-white p-2 rounded hover:bg-accent-champagne">
           {isEditMode ? 'Update Admin' : 'Create Admin'}
         </button>
         {isEditMode && (

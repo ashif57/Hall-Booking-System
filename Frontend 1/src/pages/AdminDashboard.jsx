@@ -138,7 +138,7 @@ const AdminDashboard = () => {
       <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-4">
         {/* Office Filter */}
         <div>
-          <label htmlFor="office-filter" className="block text-sm font-medium text-gray-700">Filter by Office</label>
+          <label htmlFor="office-filter" className="block text-sm font-medium text-text-charcoal">Filter by Office</label>
           <select
             id="office-filter"
             name="office-filter"
@@ -157,7 +157,7 @@ const AdminDashboard = () => {
 
         {/* Date Filter */}
         <div>
-          <label htmlFor="date-filter" className="block text-sm font-medium text-gray-700">Filter by Date</label>
+          <label htmlFor="date-filter" className="block text-sm font-medium text-text-charcoal">Filter by Date</label>
           <input
             type="date"
             id="date-filter"
@@ -170,7 +170,7 @@ const AdminDashboard = () => {
 
         {/* Category Filter */}
         <div>
-          <label htmlFor="category-filter" className="block text-sm font-medium text-gray-700">Filter by Category</label>
+          <label htmlFor="category-filter" className="block text-sm font-medium text-text-charcoal">Filter by Category</label>
           <select
             id="category-filter"
             name="category-filter"
@@ -189,7 +189,7 @@ const AdminDashboard = () => {
 
         {/* Session Filter */}
         <div>
-          <label htmlFor="session-filter" className="block text-sm font-medium text-gray-700">Filter by Session</label>
+          <label htmlFor="session-filter" className="block text-sm font-medium text-text-charcoal">Filter by Session</label>
           <select
             id="session-filter"
             name="session-filter"
@@ -267,14 +267,14 @@ const AdminDashboard = () => {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <button
               onClick={() => navigate("/admin/approvals")}
-              className="flex items-center justify-center p-4 text-gray-700 transition-colors bg-white rounded-lg shadow-md hover:bg-gray-50"
+              className="flex items-center justify-center p-4 text-text-charcoal transition-colors bg-white rounded-lg shadow-md hover:bg-gray-50"
             >
               <CheckCircle size={20} className="mr-2" />
               Manage Approvals
             </button>
             <button
               onClick={() => navigate("/admin/halls")}
-              className="flex items-center justify-center p-4 text-gray-700 transition-colors bg-white rounded-lg shadow-md hover:bg-gray-50"
+              className="flex items-center justify-center p-4 text-text-charcoal transition-colors bg-white rounded-lg shadow-md hover:bg-gray-50"
             >
               <Settings size={20} className="mr-2" />
               Manage Halls

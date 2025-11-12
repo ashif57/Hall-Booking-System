@@ -116,8 +116,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   const navLinkClasses = (isActive) =>
     `flex items-center px-4 py-2 rounded-lg transition-colors duration-200 ${
       isActive
-        ? 'bg-blue-600 text-white shadow-sm ring-1 ring-blue-700/20'
-        : 'text-gray-600 hover:bg-gray-100'
+        ? 'bg-secondary-royal-gold text-white shadow-sm ring-1 ring-blue-700/20'
+        : 'text-text-charcoal hover:bg-accent-champagne'
     }`;
 
   return (
@@ -132,7 +132,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       />
 
       <aside
-        className={`fixed lg:relative inset-y-0 left-0 bg-white w-64 p-4 space-y-6 transform ${
+        className={`fixed lg:relative inset-y-0 left-0 bg-background-ivory-white w-64 p-4 space-y-6 transform ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0 transition-transform duration-300 ease-in-out z-30 flex flex-col shadow-lg`}
         aria-hidden={!sidebarOpen && window.innerWidth < 1024}
@@ -145,7 +145,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
           {/* close on small screens */}
           <button
             onClick={() => setSidebarOpen(false)}
-            className="p-1 text-gray-500 rounded lg:hidden hover:bg-gray-100"
+            className="p-1 text-gray-500 rounded lg:hidden hover:bg-accent-champagne"
             aria-label="Close sidebar"
           >
             <X size={20} />

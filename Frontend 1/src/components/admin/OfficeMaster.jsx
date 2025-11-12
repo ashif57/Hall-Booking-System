@@ -80,7 +80,7 @@ const OfficeMaster = () => {
         <h3 className="font-semibold">Office Master</h3>
         <button
           onClick={() => handleOpenModal()}
-          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 flex items-center"
+          className="bg-secondary-royal-gold text-white px-4 py-2 rounded-md hover:bg-accent-champagne flex items-center"
         >
           <FaPlus className="mr-2" /> Add Office
         </button>
@@ -173,7 +173,7 @@ const OfficeModal = ({ office, onClose, onSave, adminUsers, entities }) => {
         <form onSubmit={handleSubmit} className="space-y-4 grid gap-4 grid-cols-2">
           {Object.keys(formData).map((key) => (
             <div key={key}>
-              <label className="block text-gray-700 text-sm font-bold mb-1" htmlFor={key}>
+              <label className="block text-text-charcoal text-sm font-bold mb-1" htmlFor={key}>
                 {key.split('_').join(' ').replace(/\b\w/g, l => l.toUpperCase())}
               </label>
               {key === 'office_spoc' ? (
@@ -182,7 +182,7 @@ const OfficeModal = ({ office, onClose, onSave, adminUsers, entities }) => {
                   name={key}
                   value={formData[key] || ''}
                   onChange={handleChange}
-                  className="shadow-sm appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow-sm appearance-none border rounded w-full py-2 px-3 text-text-charcoal leading-tight focus:outline-none focus:shadow-outline"
                 >
                   <option value="">Select SPOC</option>
                   {adminUsers.map(user => (
@@ -212,7 +212,7 @@ const OfficeModal = ({ office, onClose, onSave, adminUsers, entities }) => {
                  type="text"
                  value={formData[key]}
                  onChange={handleChange}
-                 className="shadow-sm appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                 className="shadow-sm appearance-none border rounded w-full py-2 px-3 text-text-charcoal leading-tight focus:outline-none focus:shadow-outline"
                  required
                />
              )}

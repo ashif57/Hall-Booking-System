@@ -97,7 +97,7 @@ const HistoryPage = () => {
       case 'Cancelled':
         return 'bg-red-100 text-red-800';
       default:
-        return 'bg-gray-100 text-gray-800';
+        return 'bg-background-ivory-white text-gray-800';
     }
   };
 
@@ -127,7 +127,7 @@ const HistoryPage = () => {
           </div>
           <button
             onClick={handleLogout}
-            className="flex items-center px-4 py-2 font-medium text-gray-600 transition-colors duration-300 rounded-md hover:bg-blue-600 hover:text-white"
+            className="flex items-center px-4 py-2 font-medium text-text-charcoal transition-colors duration-300 rounded-md hover:bg-secondary-royal-gold hover:text-white"
           >
             <ArrowLeft size={18} className="mr-2" /> Back to Home
           </button>
@@ -142,7 +142,7 @@ const HistoryPage = () => {
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 filter === status
                   ? 'bg-indigo-600 text-white shadow-md'
-                  : 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm'
+                  : 'bg-white text-text-charcoal hover:bg-background-ivory-white shadow-sm'
               }`}
             >
               {status.charAt(0).toUpperCase() + status.slice(1)}
@@ -186,20 +186,20 @@ const HistoryPage = () => {
                   </p>
 
                   <div className="space-y-3">
-                    <div className="flex items-center text-gray-700">
+                    <div className="flex items-center text-text-charcoal">
                       <Calendar className="mr-2" size={16} />
                       <span>{formatDate(booking.slot_date)}</span>
                     </div>
-                    <div className="flex items-center text-gray-700">
+                    <div className="flex items-center text-text-charcoal">
                       <Clock className="mr-2" size={16} />
                       <span>{booking.slot_time}</span>
                     </div>
-                    <div className="flex items-center text-gray-700">
+                    <div className="flex items-center text-text-charcoal">
                       <User className="mr-2" size={16} />
                       <span>{booking.emp_name} ({booking.emp_code})</span>
                     </div>
                     {booking.team_name && (
-                      <div className="flex items-center text-gray-700">
+                      <div className="flex items-center text-text-charcoal">
                         <Users className="mr-2" size={16} />
                         <span>{booking.team_name}</span>
                       </div>
@@ -222,7 +222,7 @@ const HistoryPage = () => {
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
                       {booking.session_type}
                     </span>
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-background-ivory-white text-gray-800">
                       {booking.shift} Shift
                     </span>
                   </div>
@@ -258,7 +258,7 @@ const HistoryPage = () => {
               <div className="flex justify-end space-x-3">
                 <button
                   onClick={() => setShowCancelModal(false)}
-                  className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="px-4 py-2 border border-gray-300 rounded-md text-text-charcoal hover:bg-background-ivory-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   Keep Booking
                 </button>
