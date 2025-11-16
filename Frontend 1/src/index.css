@@ -10,3 +10,12 @@ body {
 ::selection {
   background-color: #B0BEC5;
 }
+
+@keyframes marquee {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100vw); }
+}
+
+.marquee {
+  animation: marquee 15s linear infinite;
+}

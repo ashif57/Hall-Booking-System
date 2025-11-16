@@ -43,18 +43,23 @@ const AdminLogin = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="relative flex items-center justify-center min-h-screen bg-background-ivory-white"
+      className="relative flex items-center justify-center min-h-screen bg-slate-300"
     >
       <button
         type="button"
         onClick={() => navigate('/')}
-        className="absolute flex items-center px-4 py-2 font-medium text-text-charcoal transition-colors duration-300 rounded-md top-4 right-4 hover:bg-secondary-royal-gold hover:text-white"
+        className="absolute flex items-center px-4 py-2 font-medium text-gray-700 transition-colors duration-300 bg-white rounded-md shadow-sm top-4 right-4 hover:bg-gray-100 border-2 border-primary-deep-navy"
       >
         <ArrowLeft size={18} className="mr-2" /> Back to Home
       </button>
-      <div className="w-full max-w-md p-8 m-4 bg-white rounded-lg shadow-md">
-        <h2 className="mb-2 text-3xl font-bold text-center text-gray-800">Admin Login</h2>
-        <p className="mb-8 text-center text-gray-500">Access the hall management dashboard.</p>
+      <div className="container mx-auto max-w-4xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-xl shadow-lg overflow-hidden border-2 border-primary-deep-navy">
+          <div className="hidden md:flex items-center justify-center p-8 bg-blue-50">
+            <img src="/adminlogin.svg" alt="Admin Login Illustration" className="w-full max-w-sm" />
+          </div>
+          <div className="p-8">
+            <h2 className="mb-2 text-3xl font-bold text-center text-gray-800">Admin Login</h2>
+            <p className="mb-8 text-center text-gray-500">Access the hall management dashboard.</p>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block mb-2 text-sm font-bold text-text-charcoal" htmlFor="username">
@@ -106,6 +111,8 @@ const AdminLogin = () => {
             </button>
           </div>
         </form>
+          </div>
+        </div>
       </div>
     </motion.div>
   );

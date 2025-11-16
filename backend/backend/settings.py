@@ -15,16 +15,18 @@ SECRET_KEY = 'django-insecure-6hr()dq1ljkyjg%)mpu941k(j3#6w9uc26i_%))(jiojb@5_cn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['hall-booking-system-bpgs.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['hall-booking-system-bpgs.onrender.com', 'localhost', '127.0.0.1', 'hall-booking-system57.vercel.app']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5173",
     "https://hall-booking-system-bpgs.onrender.com",
+    "https://hall-booking-system57.vercel.app",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://hall-booking-system-bpgs.onrender.com',
+    'https://hall-booking-system57.vercel.app',
 ]
 
 

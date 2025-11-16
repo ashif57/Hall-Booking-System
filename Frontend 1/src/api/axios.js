@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'https://hall-booking-system-bpgs.onrender.com/api', // Update this to your Django backend URL
+  baseURL: 'https://hall-booking-system-bpgs.onrender.com/api', 
   headers: {
     'Content-Type': 'application/json',
   },

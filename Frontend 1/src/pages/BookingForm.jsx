@@ -639,8 +639,8 @@ const BookingForm = () => {
                     hall.image.startsWith('http') ?
                       hall.image : // Already a full URL
                     hall.image.startsWith('/media/') ?
-                      `http://localhost:8000${hall.image}` : // Has /media/ prefix
-                      `http://localhost:8000/media/${hall.image}` // Add /media/ prefix
+                      `https://hall-booking-system-bpgs.onrender.com${hall.image}` : // Has /media/ prefix
+                      `https://hall-booking-system-bpgs.onrender.com/media/${hall.image}` // Add /media/ prefix
                   }
                   alt={hall.hall_name || "Hall"}
                   className="w-full mb-4 rounded-lg shadow-md"

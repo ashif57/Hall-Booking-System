@@ -3,6 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Calendar, CheckSquare, MousePointerClick, MapPin, Users } from 'lucide-react';
+import Lottie from 'lottie-react';
+import emailAnimation from '../../public/emailanimations.json';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
 import { fetchOffices, fetchHalls } from '../api/axios'; 
@@ -128,17 +130,21 @@ const LandingPage = () => {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="py-20 bg-[#032d6b] md:py-24">
+        <section className="py-10 md:py-24 bg-yellow-500 shadow-[0_12px_24px_rgba(0,0,0,0.45)]  shadow-zinc-950" >
           <div className="container px-6 mx-auto text-center">
             <motion.h1 
               className="mb-4 text-4xl font-bold text-white md:text-800 md:text-6xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
+              style={{
+  textShadow:
+    '0.5px 0.5px 0px #000, -0.5px -0.5px 0px #000, 0.5px -0.5px 0px #000, -0.5px 0.5px 0px #000'
+}}
             >
-              Meeting Venue Booking 
+              Meeting Venue Booking
             </motion.h1>
-            <motion.p 
+            <motion.p
               className="max-w-3xl mx-auto mb-12 text-lg text-white md:text-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -158,6 +164,7 @@ const LandingPage = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="max-w-3xl p-6 mx-auto border-gray-100 shadow-sm rounded-xl"
             >
+              <img src="/landing.svg" alt="Illustration" className="w-64 h-auto mx-auto mb-4" />
               <h2 className="mb-4 text-xl font-semibold text-center text-gray-800">Select an Office to View Available Halls</h2>
               <div className="relative w-full">
               <select
@@ -237,7 +244,7 @@ const LandingPage = () => {
                         <div className="relative h-48 overflow-hidden bg-gradient-to-r from-blue-50 to-indigo-50">
                           {hall.image ? (
                             <img
-                              src={`http://localhost:8000${hall.image}`}
+                              src={`https://hall-booking-system-bpgs.onrender.com${hall.image}`}
                               alt={hall.hall_name || 'Hall'}
                               className="object-cover w-full h-full"
                               onError={(e) => {
@@ -287,13 +294,13 @@ const LandingPage = () => {
         )}
 
         {/* Booking Steps Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-5 bg-gray-50">
           <div className="container px-6 mx-auto">
             <h2 className="mb-12 text-3xl font-bold text-center text-gray-800">How It Works</h2>
             <div className="flex flex-wrap -mx-4">
               <div className="w-full px-4 mb-8 md:w-1/3">
-                <div className="h-full p-8 text-center bg-white rounded-lg shadow-md">
-                  <div className="inline-block p-4 mb-4 text-blue-600 bg-blue-100 rounded-full">
+                <div className="h-full p-8 text-center bg-white rounded-lg shadow-md border-2 border-primary-deep-navy">
+                  <div className="inline-block p-4 mb-4 text-blue-600 bg-blue-100 rounded-full ">
                     <Calendar size={32} />
                   </div>
                   <h3 className="mb-2 text-xl font-bold">1. Select Date & Time</h3>
@@ -301,7 +308,7 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="w-full px-4 mb-8 md:w-1/3">
-                <div className="h-full p-8 text-center bg-white rounded-lg shadow-md">
+                <div className="h-full p-8 text-center bg-white rounded-lg shadow-md border-2 border-primary-deep-navy">
                   <div className="inline-block p-4 mb-4 text-green-600 bg-green-100 rounded-full">
                     <MousePointerClick size={32} />
                   </div>
@@ -310,14 +317,22 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="w-full px-4 mb-8 md:w-1/3">
-                <div className="h-full p-8 text-center bg-white rounded-lg shadow-md">
+                <div className="h-full p-8 text-center bg-white rounded-lg shadow-md border-2 border-primary-deep-navy">
                   <div className="inline-block p-4 mb-4 text-purple-600 bg-purple-100 rounded-full">
                     <CheckSquare size={32} />
                   </div>
                   <h3 className="mb-2 text-xl font-bold">3. Confirm Booking</h3>
                   <p className="text-gray-600">Submit your request and receive an instant pending confirmation via email.</p>
+            
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-2 bg-white">
+          <div className="container px-6 mx-auto">
+            <div className="w-64 mx-auto">
+              <Lottie animationData={emailAnimation} loop={true} />
             </div>
           </div>
         </section>
