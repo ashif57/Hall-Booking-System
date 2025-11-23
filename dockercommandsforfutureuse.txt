@@ -1,0 +1,5 @@
+docker build -t <your-dockerhub-username>/<project-name>-backend:v1 .
+docker push <your-dockerhub-username>/<project-name>-backend:v1
+docker login
+docker --version
+docker run -d --name backend --network myapp-net yourname/hall-backend:v1

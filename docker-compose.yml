@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,[::1]
+    # You can override the command here for development if needed:
+    # command: python manage.py runserver 0.0.0.0:8000
+
+  frontend:
+    build: "./Frontend 1"
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

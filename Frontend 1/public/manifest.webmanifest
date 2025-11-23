@@ -1,24 +1,24 @@
 {
-  "name": "Hall Booking System",
-  "short_name": "HBS",
-  "description": "A hall booking system PWA",
+  "name": "Hallify - Premium Hall Booking",
+  "short_name": "Hallify",
+  "description": "Book your perfect venue with Hallify. The premium hall booking system.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "pwa-192x192.png",
+      "src": "/orig.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "pwa-512x512.png",
+      "src": "/orig.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "pwa-512x512.png",
+      "src": "/orig.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

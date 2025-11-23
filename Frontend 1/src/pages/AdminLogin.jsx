@@ -43,7 +43,7 @@ const AdminLogin = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="relative flex items-center justify-center min-h-screen bg-slate-300"
+      className="relative flex items-center justify-center min-h-screen px-4 py-12 bg-slate-300"
     >
       <button
         type="button"
@@ -54,11 +54,11 @@ const AdminLogin = () => {
       </button>
       <div className="container mx-auto max-w-4xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-xl shadow-lg overflow-hidden border-2 border-primary-deep-navy">
-          <div className="hidden md:flex items-center justify-center p-8 bg-blue-50">
+          <div className="flex items-center justify-center p-6 bg-blue-50 md:p-8">
             <img src="/adminlogin.svg" alt="Admin Login Illustration" className="w-full max-w-sm" />
           </div>
-          <div className="p-8">
-            <h2 className="mb-2 text-3xl font-bold text-center text-gray-800">Admin Login</h2>
+          <div className="p-6 md:p-8">
+            <h2 className="mb-2 text-2xl font-bold text-center text-gray-800 md:text-3xl">Admin Login</h2>
             <p className="mb-8 text-center text-gray-500">Access the hall management dashboard.</p>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
